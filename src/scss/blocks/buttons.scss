@@ -1,0 +1,21 @@
+.main-button {
+	color: $color-white;
+	background-color: $color-blue;
+	text-transform: uppercase;
+	border-radius: 30px;
+	border: none;
+	font-weight: 500;
+	height: 50px;
+	padding: 0 30px;
+	text-decoration: none;
+	line-height: 50px;
+	&:hover {
+		background-color: $color-blue-hover;
+	}
+	@media (max-width: 768px) {
+		font-size: 12px;
+		height: 40px;
+		line-height: 40px;
+		padding: 0 20px;
+	}
+}

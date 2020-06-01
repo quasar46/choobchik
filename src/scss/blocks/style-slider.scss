@@ -1,0 +1,117 @@
+// arrows
+.arrow-n,
+.arrow-p {
+	width: 28px;
+	height: 28px;
+	border-radius: 50%;
+	border: none;
+	background-color: $color-blue;
+	background-repeat: no-repeat;
+	background-position: center;
+	background-size: 13px 13px;
+	display: inline-block;
+	&:hover {
+		background-color: $color-blue-hover;
+	}
+}
+
+.arrow-n {
+	background-image: url("../images/icons/arrow-slider.svg");
+}
+
+.arrow-p {
+	background-image: url("../images/icons/arrow-slider.svg");
+	transform: rotate(180deg);
+}
+
+// dots
+.slick-dots {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+.slick-dots li {
+	button:before {
+		width: 20px;
+		height: 20px;
+		background-color: $color-white;
+		border-radius: 50%;
+		opacity: 1;
+		font-size: 0;
+		@media (max-width: 768px) {
+			width: 10px;
+			height: 10px;
+		}
+	}
+	@media (max-width: 768px) {
+		width: 10px;
+		height: 10px;
+	}
+}
+
+.services-slider,
+.say-slider,
+.why-slider {
+	.slick-dots li button:before {
+		background-color: #bbb6ce;
+	}
+}
+
+.slick-dots li.slick-active button:before {
+	background-color: $color-blue;
+	opacity: 1;
+}
+
+.slick-dots-wrap {
+	.arrowNext,
+	.arrowPrev {
+		width: 28px;
+		height: 28px;
+		background-color: $color-blue;
+		border-radius: 50%;
+		border: none;
+		margin: 0 5px;
+		background-image: url("../images/icons/arrow-slider.svg");
+		background-repeat: no-repeat;
+		background-position: center;
+		background-size: 13px 13px;
+		&:hover {
+			background-color: $color-blue-hover;
+		}
+	}
+	.arrowPrev {
+		transform: rotate(180deg);
+	}
+	@media (max-width: 768px) {
+		margin-top: 20px;
+	}
+}
+
+.section-why--mode {
+	.arrowNext,
+	.arrowPrev {
+		background-color: $color-white;
+		background-image: url("../images/icons/arrow-slider--mode.svg");
+	}
+	.slick-dots li button:before {
+		background-color: $color-white;
+	}
+	.slick-dots li.slick-active button:before {
+		background-color: #8192ca;
+		opacity: 1;
+	}
+}
+
+.slick-dots-wrap {
+	display: flex;
+	justify-content: center;
+	// align-items: center;
+	width: 100%;
+	margin-top: 30px;
+}
+
+.slick-dots {
+	position: relative;
+	width: auto;
+	transform: translateY(-90%);
+}

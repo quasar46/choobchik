@@ -1,0 +1,22 @@
+.main-menu {
+	ul {
+		display: flex;
+		flex-wrap: wrap;
+		li {
+			&:last-child {
+				margin-right: 0;
+			}
+		}
+	}
+	a {
+		text-decoration: none;
+		font-weight: 500;
+		color: $color-black;
+		&:hover {
+			color: $color-blue;
+		}
+	}
+	@media (max-width: 768px) {
+		display: none;
+	}
+}

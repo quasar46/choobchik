@@ -1,0 +1,44 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+
+			//breadcrumbs
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span /
+						li
+							a(href="index.html") Акции
+						li
+							span /
+						li
+							span.active Карта клиента
+
+			// cart
+			section.section-cart
+				.container
+					.figure.figure__services-4
+					h1.title КАРТА КЛИЕНТА СЕТИ ПАРИКМАХЕРСКИХ "ЧУБЧИК"
+					.section-cart__wrapper
+						.section-cart__picture
+							img(src="images/cart.jpg" alt="")
+						.section-cart__text
+							p Обладателем Карты клиента может стать <b> любой клиент сети парикмахерских "Чуб-Чик"</b>. 
+							p Рады сообщить Вам, что сеть парикмахерских "Чуб-Чик" предлагает своим клиентам Виртуальную Накопительную Дисконтную карту – это электронная версия Карты клиента "Чуб-Чик". которая выпускается мгновенно и существует в Вашем персональном компьютере или на телефоне  на сайте "Чуб-Чик".
+							p <b>Такую карту невозможно потерять или как-то испортить, ее не смогут украсть, а в использовании она еще проще и удобней.</b> Она бессрочная и позволяет Вам участвовать в акциях, проводимых компанией, и получать скидки на товары и услуги
+							p Карта клиента является собственностью компании. <b>Карты Клиента сети "Чуб-Чик" являются едиными для всей сети парикмахерских</b> , в том числе и для Интернет-магазина и доступны в двух видах: пластиковая и виртуальная .
+						.clearfix
+
+			include modules/communication.pug
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+		include modules/script.pug

@@ -1,0 +1,40 @@
+.section-cart {
+	padding-top: 50px;
+	padding-bottom: 70px;
+	h1.title {
+		font-size: 30px;
+		text-align: center;
+		margin-bottom: 45px;
+		@media (max-width: 768px) {
+			font-size: 16px;
+			margin-bottom: 20px;
+		}
+	}
+	@media (max-width: 768px) {
+		padding-bottom: 50px;
+	}
+}
+
+.section-cart__picture {
+	float: right;
+	margin-left: 35px;
+	margin-bottom: 35px;
+	border-radius: 20px;
+	overflow: hidden;
+	img {
+		object-fit: cover;
+		margin-bottom: -10px;
+	}
+	@media (max-width: 768px) {
+		margin-left: 0;
+	}
+}
+
+.section-cart__text {
+	p {
+		margin-bottom: 20px;
+		@media (max-width: 768px) {
+			font-size: 14px;
+		}
+	}
+}

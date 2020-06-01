@@ -1,0 +1,174 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+
+			//breadcrumbs
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span /
+						li
+							span Галерея
+
+			// gallery
+			section.section-gallery
+				.container
+					.figure.figure__why-1
+					.figure.figure__gallery-1
+					h1.title Галлерея
+					.section-gallery__tabs
+						ul
+							li#defaultOpen(onclick="openGallery(event, 'children')") Результаты нашей работы
+							li(onclick="openGallery(event, 'masters')") Наши мастера
+							li(onclick="openGallery(event, 'salons')") Наши парикмахерские
+					.section-gallery__content
+						.section-gallery__inner#children(style="display: block")
+							ul
+								li
+									a(data-fancybox="children" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="children" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="children" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="children" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="children" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="children" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+							#slide-down2
+								ul
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+
+							.section-gallery__btn
+								a.main-button#show-more2 Показать больше
+
+
+						.section-gallery__inner#masters
+							ul
+								li
+									a(data-fancybox="masters" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="masters" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="masters" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="masters" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="masters" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="masters" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+							#slide-down3
+								ul
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+
+
+							.section-gallery__btn
+								a.main-button#show-more3 Показать больше
+
+
+						.section-gallery__inner#salons
+							ul
+								li
+									a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+								li
+									a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+										img(src="images/gallery/item-1.jpg" alt="")
+
+							#slide-down4
+								ul
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+									li
+										a(data-fancybox="salons" href="images/gallery/item-1.jpg")
+											img(src="images/gallery/item-1.jpg" alt="")
+							.section-gallery__btn
+								a.main-button#show-more4 Показать больше
+
+
+
+			include modules/communication.pug							
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+		include modules/script.pug

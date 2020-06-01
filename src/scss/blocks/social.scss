@@ -1,0 +1,117 @@
+.social {
+	display: flex;
+	margin-right: -15px;
+
+	li {
+		margin-right: 15px;
+	}
+	@media (max-width: 768px) {
+		justify-content: center;
+		margin-bottom: 0;
+	}
+}
+
+.social__icon {
+	width: 25px;
+	height: 25px;
+	// border-radius: 50%;
+	// background-color: $color-white;
+	background-image: url("../images/sprite-social.png");
+	background-repeat: no-repeat;
+	background-size: 125px auto;
+	&--instagram {
+		background-position: 0 0;
+		&:hover {
+			background-position: 0 -25px;
+		}
+	}
+	&--vk {
+		background-position: -25px 0;
+		&--mode {
+			background-position: -100px 0;
+		}
+		&:hover {
+			background-position: -25px -25px;
+		}
+	}
+	&--whatcap {
+		background-position: -50px 0;
+		&--mode {
+			background-position: -100px -25px;
+		}
+		&:hover {
+			background-position: -50px -25px;
+		}
+	}
+	&--email {
+		background-position: -75px 0;
+		&:hover {
+			background-position: -75px -25px;
+		}
+	}
+	&--tel {
+		background-position: -250px -250px;
+		&:hover {
+			background-position: -250px -25px;
+		}
+	}
+	&--location {
+		background-position: -75px 0;
+		&:hover {
+			background-position: -75px -25px;
+		}
+	}
+}
+
+.social--mode {
+	display: flex;
+	flex-direction: column;
+	.location {
+		position: relative;
+		padding-left: 30px;
+	}
+	li {
+		line-height: 2;
+		display: flex;
+		justify-content: flex-start;
+		a {
+			display: flex;
+			align-items: center;
+			text-decoration: none;
+			color: $color-black;
+			@media (max-width: 768px) {
+				margin-bottom: 10px;
+			}
+		}
+
+		span {
+			margin-left: 10px;
+			&:hover {
+				color: $color-blue;
+			}
+			@media (max-width: 768px) {
+				font-size: 14px;
+				margin-left: 0;
+				text-align: center;
+			}
+		}
+		@media (max-width: 768px) {
+			justify-content: center;
+		}
+	}
+	.social__icon--whatcap {
+		background-position: -50px -25px;
+		@media (max-width: 768px) {
+			margin-right: 10px;
+		}
+	}
+	.social__icon--vk {
+		background-position: -25px -25px;
+		@media (max-width: 768px) {
+			margin-right: 10px;
+		}
+	}
+	.other__icon--tel {
+		background-position: -50px -25px;
+	}
+}

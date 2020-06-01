@@ -1,0 +1,93 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+
+			//breadcrumbs
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span /
+						li
+							span.active Услуги
+
+			// services
+			section.section-services
+				.container
+					.figure.figure__why-2
+					.figure.figure__services-1
+					h2.title Наши услуги
+					.section-services__list
+						ul.services-slider
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-1.png" alt="")
+									.item__head
+										span Стрижка машинкой
+									.item__content
+										p Аккуратная стрижка машинкой, которая обязательно понравится вашему ребенку.
+								.item__bottom
+									span от 450 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-2.png" alt="")
+									.item__head
+										span МОДЕЛЬНАЯ СТРИЖКА ДЛЯ МАЛЬЧИКА ДО 7ЛЕТ
+									.item__content
+										p Модельная стрижка подойдёт абсолютно любому мальчику
+								.item__bottom
+									span от 650 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-3.png" alt="")
+									.item__head
+										span МОДЕЛЬНАЯ СТРИЖКА ДЛЯ ДЕВОЧЕК
+									.item__content Модельные стрижки подходят абсолютно всем детям всех возрастов.
+								.item__bottom
+									span от 650 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-4.png" alt="")
+									.item__head ПОДПРАВНИВАНИЕ КОНЧИКОВ
+									.item__content Подравнивание волос – невероятно важный процесс их оздоравливания
+								.item__bottom
+									span от 500 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-5.png" alt="")
+									.item__head СТРИЖКА ДЛЯ МАМ МОДЕЛЬНАЯ
+									.item__content Мы с радостью подстрижём и мамочек, которые привели своих детей.
+								.item__bottom
+									span от 420 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-6.png" alt="")
+									.item__head СТРИЖКА ДЛЯ ПАП И МАЛЬЧИКОВ ОТ 7 ЛЕТ
+									.item__content Мы с радостью подстрижём и отцов, которые привели своих детей.
+								.item__bottom
+									span от 420 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+
+			include modules/communication.pug
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+		include modules/script.pug

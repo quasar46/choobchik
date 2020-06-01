@@ -1,0 +1,125 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+
+			// breadcrumbs
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span /
+						li
+							span.active О нас
+
+			// about-main
+			section.section-about-main
+				.container
+					.figure.figure__services-1
+					.figure.figure__services-2
+					.figure.figure__services-3
+					h1.title Мы всегда вам рады
+					.section-about-main__wrapper
+						.section-about-main__col
+							img(src="../images/choop-pic.jpg" alt="")
+						.section-about-main__col
+							h3.title Мы - федеральная сеть детских парикмахерских
+							p Мы дарим радость всем детям, но для некоторых это единственное место, где они могут подстричься! Вместо взрослых кресел и зеркал, где видно, что у тети страшные ножницы в руках, у нас стоят машинки с кнопками, музыкой и светом, яркие детские кресла и телевизоры с любимыми мультиками, а ещё много игрушек и мыльных пузырей. Ребенок и не заметит, что его подстригли. Если у Вас есть малыш, Вы знаете, что обычные парикмахерские – совсем не место для маленьких детей.
+
+							.clearfix
+					h3.title Предлагаем Вам решение проблемы:
+					ul.section-about-main__list
+						li В парикмахерской «Чуб-Чик» работают мастера и администраторы с психолого-педагогической подготовкой. Это значит, что они найдут подход к капризуле и нехочухе любого возраста.
+						li В парикмахерской «Чуб-Чик» каждая деталь продумана с учетом обслуживания детей. Во время ожидания они могут поиграть в игрушки, а пока мастер работает – смотреть любимые мультики и фильмы, сидя в специальном детском кресле.
+						li В парикмахерской «Чуб-Чик» есть залы для родителей – мама или папа могут сделать стрижку или укладку, пока дети заняты игрой или с ними работает мастер.
+						li Вашему ребенку обязательно понравится у нас – мы гарантируем индивидуальный подход к каждому малышу. А старшие школьники и родители обязательно оценят профессионализм наших мастеров.
+
+			// why
+			section.section-why.section-why--mode
+				.container
+					h2.title Наши преимущества
+					.section-why__list
+						ul.why-slider
+							li.item
+								.item__picture
+									img(src="images/why/item-1.png" alt="")
+								h2.item__title У нас весело
+								p.item__text Яркий дизайн, много игрушек, большая музыкальная красная машина, любимые мультики!
+							li.item
+								.item__picture
+									img(src="images/why/item-2.png" alt="")
+								h2.item__title НАШИ МАСТЕРА
+								p.item__text Наши приветливые мастера найдут подход к любому ребенку и подружится с ним.
+							li.item
+								.item__picture
+									img(src="images/why/item-3.png" alt="")
+								h2.item__title ЧИСТОТА
+								p.item__text Всё стерильно! Все инструменты постоянно дезинфицируются и стерилизуются.
+							li.item
+								.item__picture
+									img(src="images/why/item-4.png" alt="")
+								h2.item__title А ТАКЖЕ ИХ РОДИТЕЛИ
+								p.item__text Наши мастера стригут не только детей, но и родителей. Приходите всей семьёй!
+							li.item
+								.item__picture
+									img(src="images/why/item-5.png" alt="")
+								h2.item__title НАША ЦЕЛЬ
+								p.item__text Дать почувствовать ребенку настоящим героем, вокруг которого происходит действие.
+							li.item
+								.item__picture
+									img(src="images/why/item-6.png" alt="")
+								h2.item__title У НАС ИНТЕРЕСНО
+								p.item__text У нас всё устроено так, что бы вашему ребенку хотелось вернуться в наше заведение в следующий раз.
+
+			// say about
+			section.section-say
+				.container
+					h2.title ЧТО ГОВОРЯТ О НАС
+					.section-say__list
+						ul.say-slider
+							li.item
+								p.item__text Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель.
+								.item__bottom
+									img(src="images/avatars/item-1.png" alt="").item__avatar
+									p.item__name Илана Николаевна
+							li.item
+								p.item__text Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель.
+								.item__bottom
+									img(src="images/avatars/item-2.png" alt="").item__avatar
+									p.item__name Илана Николаевна
+							li.item
+								p.item__text Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель.
+								.item__bottom
+									img(src="images/avatars/item-3.png" alt="").item__avatar
+									p.item__name Илана Николаевна
+
+			// questions
+			section.section-questions
+				.container
+					h2.title ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+					.section-questions__list
+						ul
+							li.item
+								h3.item__tab Со скольки лет стрижете детей?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+							li.item
+								h3.item__tab Можно ли подстричься родителям?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+							li.item
+								h3.item__tab Можно сделать ножницами, т.к. ребенок боится ножниц?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+							li.item
+								h3.item__tab Малыш не хочет стричься и сильно плачет, возьмете его стричь?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+
+			include modules/communication.pug
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+		include modules/script.pug

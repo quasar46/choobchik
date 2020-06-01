@@ -1,0 +1,135 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+
+			//breadcrumbs
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span /
+						li
+							span.active Акции
+
+			// sales
+			section.section-sales.section-sales--mode
+				.container
+					.figure.figure__sales-2
+					.figure.figure__sales-1
+					h2.title Акции
+					.section-sales__list
+						ul.section-sales__inner
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title Мама + папа + я
+										ul
+											li Папа + ребенок = 1090 р
+											li Мама + ребенок =1290 р
+											li Папа + 2 ребенка = 1590 р
+											li Мама + 2 ребенка = 1690 р
+											li Мама + Папа + ребенок = 1690 р
+											li 3 ребенка = 1590 р
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:#ffffff;fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:#00ccff;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-1.jpg')")
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title Получите скидку 
+											span 15%
+										p Ваши оценки и отзывы нас мотивируют и помогают в работе, в благодарность за уделённое время, мы хотим Вам подарить скидку 15% на наши услуги.
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:#ffffff;fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:#00ccff;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-2.jpg')")
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title КАРТА КЛИЕНТА
+										p Получите карту постоянного клиента и получите <span style="color: #F9C6A1">скидку 50%</span> на каждую шестую процедуру.
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-3.jpg')")
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title СЧАСТЛИВЫЙ ПОНЕДЕЛЬНИК
+										p Каждый понедельник модельная стрижки <span style="color:#F9C6A1"> для детей до 14 лет</span> всего по <span style="color:#F9C6A1">490 рублей!</span> В акционный день остальные скидки не сумируются.
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-4.jpg')")
+
+						// hidden block
+						ul.section-sales__inner.section-sales__inner--hidden#slide-down
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title Мама + папа + я
+										ul
+											li Папа + ребенок = 1090 р
+											li Мама + ребенок =1290 р
+											li Папа + 2 ребенка = 1590 р
+											li Мама + 2 ребенка = 1690 р
+											li Мама + Папа + ребенок = 1690 р
+											li 3 ребенка = 1590 р
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:#ffffff;fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:#00ccff;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-1.jpg')")
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title Получите скидку 
+											span 15%
+										p Ваши оценки и отзывы нас мотивируют и помогают в работе, в благодарность за уделённое время, мы хотим Вам подарить скидку 15% на наши услуги.
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:#ffffff;fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:#00ccff;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-2.jpg')")
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title КАРТА КЛИЕНТА
+										p Получите карту постоянного клиента и получите <span style="color: #F9C6A1">скидку 50%</span> на каждую шестую процедуру.
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-3.jpg')")
+							// item
+							li.item.item--mode
+								.item__col
+									.item__content
+										h3.item__title СЧАСТЛИВЫЙ ПОНЕДЕЛЬНИК
+										p Каждый понедельник модельная стрижки <span style="color:#F9C6A1"> для детей до 14 лет</span> всего по <span style="color:#F9C6A1">490 рублей!</span> В акционный день остальные скидки не сумируются.
+									button.item__button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('images/sales/item-4.jpg')")
+
+						// button
+						.section-sales__btn.section-sales__btn--mode
+							a.main-button#show-more Показать больше
+
+			include modules/communication.pug
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+		include modules/script.pug

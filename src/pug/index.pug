@@ -1,0 +1,269 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+			// writing
+			section.section-writing
+				.container
+					h1.title Сеть детских <br> парикмахерских чуб-чик
+					p.section-writing__subtitle Дарим радость всем детям
+					a(href="#anchor").scroll-to.section-writing__button 
+						span Записаться
+						<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path class="mode" d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path class="mode-2" d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+
+			// services
+			section.section-services
+				.container
+					.figure.figure__services-2
+					.figure.figure__services-3
+					h2.title Наши услуги
+					.section-services__list
+						ul.services-slider
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-1.png" alt="")
+									.item__head
+										span Стрижка машинкой
+									.item__content
+										p Аккуратная стрижка машинкой, которая обязательно понравится вашему ребенку.
+								.item__bottom
+									span от 450 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-2.png" alt="")
+									.item__head
+										span МОДЕЛЬНАЯ СТРИЖКА ДЛЯ МАЛЬЧИКА ДО 7ЛЕТ
+									.item__content
+										p Модельная стрижка подойдёт абсолютно любому мальчику
+								.item__bottom
+									span от 650 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-3.png" alt="")
+									.item__head
+										span МОДЕЛЬНАЯ СТРИЖКА ДЛЯ ДЕВОЧЕК
+									.item__content Модельные стрижки подходят абсолютно всем детям всех возрастов.
+								.item__bottom
+									span от 650 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-4.png" alt="")
+									.item__head ПОДПРАВНИВАНИЕ КОНЧИКОВ
+									.item__content Подравнивание волос – невероятно важный процесс их оздоравливания
+								.item__bottom
+									span от 500 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-5.png" alt="")
+									.item__head СТРИЖКА ДЛЯ МАМ МОДЕЛЬНАЯ
+									.item__content Мы с радостью подстрижём и мамочек, которые привели своих детей.
+								.item__bottom
+									span от 420 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+							li.item
+								.item__top
+									.item__picture
+										img(src="../images/services/item-6.png" alt="")
+									.item__head СТРИЖКА ДЛЯ ПАП И МАЛЬЧИКОВ ОТ 7 ЛЕТ
+									.item__content Мы с радостью подстрижём и отцов, которые привели своих детей.
+								.item__bottom
+									span от 420 р.
+									a(href="#anchor").scroll-to.main-button Записаться
+						.section-services__btn
+							a(href="sales.html").main-button Смотреть все
+			// sales
+			section.section-sales
+				.container
+					h2.title Акции
+					.section-sales__list
+						ul.sales-slider.section-sales__inner
+							// item
+							li.item
+								.item__col
+									.item__content
+										h3.item__title Мама + папа + я
+										ul
+											li Папа + ребенок = 1090 р
+											li Мама + ребенок =1290 р
+											li Папа + 2 ребенка = 1590 р
+											li Мама + 2 ребенка = 1690 р
+											li Мама + Папа + ребенок = 1690 р
+											li 3 ребенка = 1590 р
+									button.item__button.main-button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:#ffffff;fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:#00ccff;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('../images/sales/item-1.jpg')")
+							// item
+							li.item
+								.item__col
+									.item__content
+										h3.item__title Получите скидку 
+											span 15%
+										p Ваши оценки и отзывы нас мотивируют и помогают в работе, в благодарность за уделённое время, мы хотим Вам подарить скидку 15% на наши услуги.
+									button.item__button.main-button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:#ffffff;fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:#00ccff;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('../images/sales/item-2.jpg')")
+							// item
+							li.item
+								.item__col
+									.item__content
+										h3.item__title Мама + папа + я
+										ul
+											li Папа + ребенок = 1090 р
+											li Мама + ребенок =1290 р
+											li Папа + 2 ребенка = 1590 р
+											li Мама + 2 ребенка = 1690 р
+											li Мама + Папа + ребенок = 1690 р
+											li 3 ребенка = 1590 р
+									button.item__button.main-button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('../images/sales/item-1.jpg')")
+							// item
+							li.item
+								.item__col
+									.item__content
+										h3.item__title Получите скидку 
+											span 15%
+										p Ваши оценки и отзывы нас мотивируют и помогают в работе, в благодарность за уделённое время, мы хотим Вам подарить скидку 15% на наши услуги.
+									button.item__button.main-button 
+										span Подробнее
+										<svg width="40px" height="40px" viewBox="0 0 43 43" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g transform="matrix(1,0,0,1,-548.99,-441.437)"><g transform="matrix(1,0,0,1,-15,-82.4643)"><g transform="matrix(0.893007,0,0,0.893007,352.802,166.187)"><path d="M283.746,424.199C283.746,437.248 273.168,447.826 260.118,447.826C247.07,447.826 236.492,437.248 236.492,424.199C236.492,411.15 247.07,400.572 260.118,400.572C273.168,400.572 283.746,411.15 283.746,424.199Z" style="fill:rgb(0,192,243);fill-rule:nonzero;"/></g></g><g transform="matrix(1,0,0,1,-15,-82.4643)"><g id="play" transform="matrix(0.04099,0,0,0.04099,586.864,545)"><g transform="matrix(1,0,0,1,-247.074,-247.074)"><path d="M405.284,201.188L130.804,13.28C118.128,4.596 105.356,0 94.74,0C74.216,0 61.52,16.472 61.52,44.044L61.52,450.168C61.52,477.708 74.2,494.148 94.676,494.148C105.308,494.148 117.876,489.548 130.58,480.84L405.188,292.936C422.848,280.832 432.628,264.544 432.628,247.052C432.632,229.572 422.964,213.288 405.284,201.188Z" style="fill:white;fill-rule:nonzero;"/></g></g></g></g></svg>
+								.item__col(style="background-image:url('../images/sales/item-2.jpg')")
+
+					.section-sales__btn
+						a(href="sales.html").main-button Смотреть все
+
+			// why
+			section.section-why
+				.container
+					.figure.figure__why-1
+					.figure.figure__why-2
+					h2.title Почему к нам?
+					.section-why__list
+						ul.why-slider
+							li.item
+								.item__picture
+									img(src="images/why/item-1.png" alt="")
+								h2.item__title У нас весело
+								p.item__text Яркий дизайн, много игрушек, большая музыкальная красная машина, любимые мультики!
+							li.item
+								.item__picture
+									img(src="images/why/item-2.png" alt="")
+								h2.item__title НАШИ МАСТЕРА
+								p.item__text Наши приветливые мастера найдут подход к любому ребенку и подружится с ним.
+							li.item
+								.item__picture
+									img(src="images/why/item-3.png" alt="")
+								h2.item__title ЧИСТОТА
+								p.item__text Всё стерильно! Все инструменты постоянно дезинфицируются и стерилизуются.
+							li.item
+								.item__picture
+									img(src="images/why/item-4.png" alt="")
+								h2.item__title А ТАКЖЕ ИХ РОДИТЕЛИ
+								p.item__text Наши мастера стригут не только детей, но и родителей. Приходите всей семьёй!
+							li.item
+								.item__picture
+									img(src="images/why/item-5.png" alt="")
+								h2.item__title НАША ЦЕЛЬ
+								p.item__text Дать почувствовать ребенку настоящим героем, вокруг которого происходит действие.
+							li.item
+								.item__picture
+									img(src="images/why/item-6.png" alt="")
+								h2.item__title У НАС ИНТЕРЕСНО
+								p.item__text У нас всё устроено так, что бы вашему ребенку хотелось вернуться в наше заведение в следующий раз.
+
+			// about
+			section.section-about
+				.container
+					.figure.figure__about-1
+					.figure.figure__about-2
+					.section-about__wrapper
+						.section-about__col
+							h2.title МЫ - ФЕДЕРАЛЬНАЯ СЕТЬ <br> ПАРИКМАХЕРСКИХ ДЛЯ ДЕТЕЙ
+							p Мы дарит радость всем детям, но для некоторых это единственное место, где они могут подстричься! Вместо взрослых кресел и зеркал, где видно, что у тети страшные ножницы в руках, у нас стоят машинки с кнопками, музыкой и светом, яркие детские кресла и телевизоры с любимыми мультиками, а ещё много игрушек и мыльных пузырей. Ребенок и не заметит, что его подстригли. 
+						.section-about__col
+							h2.title МЫ - ФЕДЕРАЛЬНАЯ СЕТЬ <br> ПАРИКМАХЕРСКИХ ДЛЯ ДЕТЕЙ
+							img(src="images/backgrounds/about.png" alt="")
+
+			// results
+			section.section-results
+				.container
+					h2.title Результаты нашей работы
+					.section-results__list
+						ul.results-slider
+							li.item
+								img(src="images/results/item-1.jpg" alt="")
+							li.item
+								img(src="images/results/item-2.jpg" alt="")
+							li.item
+								img(src="images/results/item-1.jpg" alt="")
+							li.item
+								img(src="images/results/item-1.jpg" alt="")
+							li.item
+								img(src="images/results/item-1.jpg" alt="")
+					.section-results__btn
+						a(href="results.hmtl").main-button Смотреть все
+
+			// questions
+			section.section-questions
+				.container
+					h2.title ЧАСТО ЗАДАВАЕМЫЕ ВОПРОСЫ
+					.section-questions__list
+						ul
+							li.item
+								h3.item__tab Со скольки лет стрижете детей?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+							li.item
+								h3.item__tab Можно ли подстричься родителям?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+							li.item
+								h3.item__tab Можно сделать ножницами, т.к. ребенок боится ножниц?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+							li.item
+								h3.item__tab Малыш не хочет стричься и сильно плачет, возьмете его стричь?
+								p.content Lorem ipsum dolor sit amet consectetur adipisicing elit. Reiciendis, consequatur.
+
+			// say about
+			section.section-say
+				.container
+					h2.title ЧТО ГОВОРЯТ О НАС
+					.section-say__list
+						ul.say-slider
+							li.item
+								p.item__text Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель.
+								.item__bottom
+									img(src="images/avatars/item-1.png" alt="").item__avatar
+									p.item__name Илана Николаевна
+							li.item
+								p.item__text Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель.
+								.item__bottom
+									img(src="images/avatars/item-2.png" alt="").item__avatar
+									p.item__name Илана Николаевна
+							li.item
+								p.item__text Lorem ipsum – псевдо-латинский текст, который используется для веб дизайна, типографии, оборудования, и распечатки вместо английского текста для того, чтобы сделать ударение не на содержание, а на элементы дизайна. Такой текст также называется как заполнитель.
+								.item__bottom
+									img(src="images/avatars/item-3.png" alt="").item__avatar
+									p.item__name Илана Николаевна
+
+			include modules/communication.pug
+
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+
+		include modules/script.pug
