@@ -1,0 +1,152 @@
+.modal-order {
+    padding: 65px 95px;
+    h2 {
+        font-size: 24px;
+        font-weight: 500;
+        margin-bottom: 30px;
+        @media (max-width: 768px) {
+            font-size: 18px;
+            text-align: center;
+        }
+    }
+    input {
+        box-shadow: 0 0 10px #ccc;
+        border: none;
+    }
+    form {
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: space-between;
+        input {
+            line-height: 45px;
+            padding: 0 10px;
+            border-radius: 6px;
+            @media (max-width: 768px) {
+                width: 100%;
+                font-size: 14px;
+            }
+        }
+        .input__name {
+            width: 100%;
+            margin-bottom: 15px;
+        }
+        .input__tel,
+        .input__email {
+            width: calc(50% - 15px);
+            margin-bottom: 15px;
+            @media (max-width: 768px) {
+                width: 100%;
+            }
+        }
+        @media (max-width: 768px) {
+            flex-wrap: nowrap;
+            flex-direction: column;
+        }
+    }
+    .form__footer {
+        display: flex;
+        width: 100%;
+        align-items: center;
+        @media (max-width: 768px) {
+            flex-direction: column;
+        }
+    }
+    .form__btns {
+        display: flex;
+        margin-left: auto;
+        align-items: center;
+        a.modal-cross {
+            cursor: pointer;
+            font-weight: 500;
+            font-size: 16px;
+            color: $color-blue;
+            background-color: #fff;
+            border: none;
+            text-transform: uppercase;
+        }
+        input.main-button {
+            padding: 0 20px;
+            background-color: $color-blue;
+            color: #ffffff;
+            margin-left: 30px;
+            border-radius: 30px;
+            &:hover {
+                background-color: #20b0e5;
+            }
+        }
+        @media (max-width: 768px) {
+            margin-left: 0;
+        }
+    }
+    @media (max-width: 768px) {
+        padding: 20px;
+    }
+}
+
+.form__consent {
+    label {
+        position: relative;
+        padding-left: 50px;
+        display: flex;
+        &::before {
+            content: "";
+            position: absolute;
+            width: 30px;
+            height: 30px;
+            border-radius: 6px;
+            box-shadow: 0 0 10px #ccc;
+            left: 0;
+            top: 50%;
+            transform: translateY(-50%);
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+    }
+    input[type="checkbox"] {
+        position: absolute;
+        z-index: -1;
+        opacity: 0;
+    }
+    input[type="checkbox"]:checked + label::before {
+        content: "x";
+    }
+    @media (max-width: 768px) {
+        margin-bottom: 20px;
+        font-size: 14px;
+    }
+}
+
+.overlay {
+    opacity: 0;
+    visibility: hidden;
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.5);
+    background-color: #000000;
+    z-index: 20;
+    transition: 0.3s all;
+}
+
+.modal {
+    opacity: 0;
+    visibility: hidden;
+    width: 100%;
+    max-width: 1100px;
+    position: fixed;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 30; /* Должен быть выше чем у подложки*/
+    background-color: #fff;
+    transition: 0.3s all;
+}
+
+.modal.active,
+.overlay.active {
+    opacity: 1;
+    visibility: visible;
+}

@@ -64,6 +64,7 @@
 }
 
 ul.section-about-main__list {
+	margin-bottom: 40px;
 	li {
 		position: relative;
 		padding-left: 30px;
@@ -88,4 +89,9 @@ ul.section-about-main__list {
 			margin-bottom: 20px;
 		}
 	}
+}
+
+.section-about-main__btn {
+	display: flex;
+	justify-content: center;
 }

@@ -1,8 +1,7 @@
-
 // sales hidden - show block
 $(document).ready(function () {
 	$('#show-more').on('click', function () {
-		$('#slide-down').slideToggle();
+		$('.slide-down').slideToggle();
 		if (!$(this).data('status')) {
 			$(this).html('Свернуть');
 			$(this).data('status', true);
@@ -11,46 +10,6 @@ $(document).ready(function () {
 			$(this).html('Показать больше');
 			$(this).data('status', false);
 		}
-	})
-
-	$('#show-more2').on('click', function () {
-		$('#slide-down2').slideToggle();
-		if (!$(this).data('status')) {
-			$(this).html('Свернуть');
-			$(this).data('status', true);
-		}
-		else {
-			$(this).html('Показать больше');
-			$(this).data('status', false);
-		}
-
-	})
-
-	$('#show-more3').on('click', function () {
-		$('#slide-down3').slideToggle();
-		if (!$(this).data('status')) {
-			$(this).html('Свернуть');
-			$(this).data('status', true);
-		}
-		else {
-			$(this).html('Показать больше');
-			$(this).data('status', false);
-		}
-
-	})
-
-	$('#show-more4').on('click', function () {
-		$('#slide-down4').slideToggle();
-		if (!$(this).data('status')) {
-			$(this).html('Свернуть');
-			$(this).data('status', true);
-			$(this).css('display', 'flex');
-		}
-		else {
-			$(this).html('Показать больше');
-			$(this).data('status', false);
-		}
-
 	})
 })
 

@@ -1,0 +1,90 @@
+doctype html
+html(lang="ru")
+	head
+		include modules/head.pug
+	body
+		include modules/header.pug
+
+		main
+			//breadcrumbs
+			.breadcrumbs
+				.container
+					ul
+						li
+							a(href="index.html") Главная
+						li
+							span /
+						li
+							span.active Персонал
+
+			// personal
+			section.section-personal
+				.figure.figure__about-3
+				.figure.figure__personal-1
+				.container
+					h1.title Наш персонал
+					ul.section-personal__list
+						li
+							.item__picture
+								img(src="images/personal/1.jpg", alt="")
+							.item__content
+								h3 Эллен Петрова
+								p Старший парикмахер
+						li
+							.item__picture
+								img(src="images/personal/2.jpg", alt="")
+							.item__content
+								h3 Эллен Петрова
+								p Старший парикмахер
+						li
+							.item__picture
+								img(src="images/personal/3.jpg", alt="")
+							.item__content
+								h3 Эллен Петрова
+								p Старший парикмахер
+						li
+							.item__picture
+								img(src="images/personal/4.jpg", alt="")
+							.item__content
+								h3 Эллен Петрова
+								p Старший парикмахер
+						
+					.slide-down
+						ul.section-personal__list
+							li
+								.item__picture
+									img(src="images/personal/5.jpg", alt="")
+								.item__content
+									h3 Эллен Петрова
+									p Старший парикмахер
+							li
+								.item__picture
+									img(src="images/personal/6.jpg", alt="")
+								.item__content
+									h3 Эллен Петрова
+									p Старший парикмахер
+							li
+								.item__picture
+									img(src="images/personal/3.jpg", alt="")
+								.item__content
+									h3 Эллен Петрова
+									p Старший парикмахер
+							li
+								.item__picture
+									img(src="images/personal/2.jpg", alt="")
+								.item__content
+									h3 Эллен Петрова
+									p Старший парикмахер
+							
+					
+				.section-gallery__btn
+						a.main-button#show-more2 Показать больше
+
+
+			include modules/communication.pug
+
+
+		include modules/footer.pug
+		include modules/mobile-menu.pug
+
+		include modules/script.pug

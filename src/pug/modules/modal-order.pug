@@ -1,0 +1,15 @@
+.modal-order.modal(data-modal="1")
+    h2 Оставьте заявку на бизнес план
+    form(action="get")
+        input.input__name(type="text" placeholder="Ваше Ф.И.О.")
+        input.input__tel(type="text" placeholder="Ваш телефон")
+        input.input__email(type="text" placeholder="Ваш Email")
+        .form__footer
+            .form__consent
+                input#consent-order(type="checkbox")
+                label(for="consent-order") согласен на обработку персональных данных
+            .form__btns
+                a.modal-cross.js-modal-close Отмена
+                input(type="submit" value="Отправить").main-button
+
+.overlay.js-overlay-modal

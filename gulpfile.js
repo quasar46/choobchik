@@ -23,15 +23,12 @@ gulp.task("pug", function () {
         .pipe(gulp.dest("build"));
 })
 
-
 gulp.task("css", function () {
     return gulp.src("src/scss/main.scss")
         .pipe(plumber())
         .pipe(sourcemaps.init())
         .pipe(sass())
-        .pipe(postcss([
-            autoprefixer()
-        ]))
+        .pipe(postcss([autoprefixer()]))
         .pipe(csso())
         .pipe(rename("main.min.css"))
         .pipe(sourcemaps.write("."))
@@ -93,32 +90,32 @@ gulp.task("images", function () {
         .pipe(gulp.dest("build/images"));
 });
 
-gulp.task("img", function () {
-    console.log(imagemin);
-    return gulp.src("src/img/*.*")
-        .pipe(imagemin([
-            imagemin.gifsicle({
-                interlaced: true
-            }),
-            imagemin.mozjpeg({
-                quality: 75,
-                progressive: true
-            }),
-            imagemin.optipng({
-                optimizationLevel: 5
-            }),
-            imagemin.svgo({
-                plugins: [{
-                    removeViewBox: true
-                },
-                {
-                    cleanupIDs: false
-                }
-                ]
-            })
-        ]))
-        .pipe(gulp.dest("build/img"));
-});
+// gulp.task("img", function () {
+//     console.log(imagemin);
+//     return gulp.src("src/img/*.*")
+//         .pipe(imagemin([
+//             imagemin.gifsicle({
+//                 interlaced: true
+//             }),
+//             imagemin.mozjpeg({
+//                 quality: 75,
+//                 progressive: true
+//             }),
+//             imagemin.optipng({
+//                 optimizationLevel: 5
+//             }),
+//             imagemin.svgo({
+//                 plugins: [{
+//                     removeViewBox: true
+//                 },
+//                 {
+//                     cleanupIDs: false
+//                 }
+//                 ]
+//             })
+//         ]))
+//         .pipe(gulp.dest("build/img"));
+// });
 
 gulp.task('fonts', function () {
     gulp.src("src/fonts/**/*.*")
